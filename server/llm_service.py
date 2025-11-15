@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import aisuite as ai
 from dotenv import load_dotenv
-from .display_functions import pretty_print_chat_completion_html
+from display_functions import pretty_print_chat_completion_html
 import markdown
 
 # Importa las herramientas decoradas con @tool

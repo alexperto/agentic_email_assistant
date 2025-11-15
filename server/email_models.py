@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Text, DateTime, Boolean
 from datetime import datetime
-from .email_database import Base
+from email_database import Base
 
 class Email(Base):
     __tablename__ = "emails"

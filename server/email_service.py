@@ -2,9 +2,9 @@ from fastapi import FastAPI, Depends, HTTPException, Query, Request
 from fastapi.templating import Jinja2Templates
 from typing import List
 from sqlalchemy.orm import Session
-from .email_database import SessionLocal, engine
-from .email_models import Base, Email
-from .email_schema import EmailCreate, EmailOut
+from email_database import SessionLocal, engine
+from email_models import Base, Email
+from email_schema import EmailCreate, EmailOut
 from datetime import datetime
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import delete
