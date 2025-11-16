@@ -50,8 +50,8 @@ templates = Jinja2Templates(directory=str(_TEMPLATES_DIR))
 
 @app.get("/", response_class=HTMLResponse)
 async def serve_ui(request: Request):
-    ui_email_server = os.getenv("UI_EMAIL_SERVER", "http://127.0.0.1:5000")
-    ui_llm_server   = os.getenv("UI_LLM_SERVER", "http://127.0.0.1:5001")  # ejemplo
+    ui_email_server = os.getenv("UI_EMAIL_SERVER", "http://127.0.0.1:8000")
+    ui_llm_server   = os.getenv("UI_LLM_SERVER", "http://127.0.0.1:8001")  # ejemplo
     return templates.TemplateResponse(
         "ui_all.html",
         {"request": request, "UI_EMAIL_SERVER": ui_email_server, "UI_LLM_SERVER": ui_llm_server}
