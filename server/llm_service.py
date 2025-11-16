@@ -7,7 +7,7 @@ from display_functions import pretty_print_chat_completion_html
 import markdown
 
 # Importa las herramientas decoradas con @tool
-from .email_tools import (
+from email_tools import (
     list_all_emails,
     list_unread_emails,
     search_emails,
